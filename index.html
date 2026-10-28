@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>TELUGU AURA</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2126224984669317');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2126224984669317&ev=PageView&noscript=1"
+    alt="">
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      color-scheme: dark;
+      --bg: #080808;
+      --silver: #e7e7e7;
+      --muted: #999999;
+      --border: rgba(255,255,255,.12);
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background:
+        radial-gradient(ellipse at 50% 0%, #262626 0%, transparent 48%),
+        linear-gradient(145deg, #050505, #111111 55%, #050505);
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 410px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 34px 23px 25px;
+      border: 1px solid var(--border);
+      border-radius: 27px;
+      background: linear-gradient(150deg,
+        rgba(255,255,255,.075),
+        rgba(255,255,255,.018) 45%,
+        rgba(255,255,255,.045));
+      box-shadow: 0 25px 80px rgba(0,0,0,.65),
+                  inset 0 1px rgba(255,255,255,.08);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15%;
+      width: 70%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #ededed, transparent);
+      opacity: .8;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 30px;
+      color: #c7c7c7;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #eeeeee;
+      box-shadow: 0 0 9px rgba(255,255,255,.7);
+    }
+
+    .logo-wrap {
+      width: 112px;
+      height: 112px;
+      margin: 25px auto 19px;
+      padding: 4px;
+      border-radius: 25px;
+      border: 1px solid rgba(255,255,255,.24);
+      background: linear-gradient(145deg, #777, #171717 48%, #aaa);
+      box-shadow: 0 12px 35px rgba(0,0,0,.55);
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 21px;
+      background: #111;
+    }
+
+    h1 {
+      font-size: clamp(25px, 7vw, 31px);
+      line-height: 1.2;
+      font-weight: 900;
+      letter-spacing: 1.3px;
+      background: linear-gradient(180deg, #fff 10%, #d4d4d4 55%, #858585);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #bcbcbc;
+    }
+
+    .description {
+      max-width: 290px;
+      margin: 17px auto 22px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      margin: 0 auto 20px;
+      background: linear-gradient(90deg, transparent, #444, transparent);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 23px;
+    }
+
+    .feature {
+      padding: 13px 8px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 13px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .feature strong {
+      display: block;
+      color: #eeeeee;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .feature span {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 9px;
+      letter-spacing: .6px;
+    }
+
+    .join-btn {
+      width: 100%;
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 15px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #f4f4f4, #bcbcbc);
+      color: #080808;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.1px;
+      box-shadow: 0 8px 25px rgba(255,255,255,.09);
+      transition: transform .2s ease, filter .2s ease;
+    }
+
+    .join-btn:active {
+      transform: scale(.98);
+      filter: brightness(.9);
+    }
+
+    .telegram-icon {
+      width: 19px;
+      height: 19px;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      margin-top: 21px;
+      color: #666;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    @media (max-height: 740px) {
+      .page {
+        padding-top: 23px;
+        padding-bottom: 19px;
+      }
+
+      .logo-wrap {
+        width: 88px;
+        height: 88px;
+        margin: 17px auto 14px;
+      }
+
+      .description {
+        margin: 12px auto 16px;
+      }
+
+      .divider {
+        margin-bottom: 15px;
+      }
+
+      .features {
+        margin-bottom: 16px;
+      }
+
+      .footer {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <div class="badge">
+      <span class="status-dot"></span>
+      YOUR TELUGU COMMUNITY
+    </div>
+
+    <div class="logo-wrap">
+      <img class="logo" src="logo.png" alt="Telugu Aura Logo">
+    </div>
+
+    <h1>𓆩 TELUGU AURA 𓆪</h1>
+
+    <p class="tagline">YOUR GAME. YOUR VIBE. YOUR AURA.</p>
+
+    <p class="description">
+      One Community. One Identity.
+      Welcome to the world of Telugu Aura.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="features">
+      <div class="feature">
+        <strong>PREMIUM COMMUNITY</strong>
+        <span>MADE FOR OUR PEOPLE</span>
+      </div>
+
+      <div class="feature">
+        <strong>DAILY UPDATES</strong>
+        <span>STAY CONNECTED</span>
+      </div>
+    </div>
+
+    <a class="join-btn"
+       href="https://t.me/+F-NU8SROmc1lMTA1"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <svg class="telegram-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M21.8 4.6 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5L20.5 3.2c.9-.3 1.6.2 1.3 1.4Z"/>
+      </svg>
+
+      JOIN OUR TELEGRAM CHANNEL
+    </a>
+
+    <div class="footer">TELUGU AURA &nbsp;|&nbsp; YOUR COMMUNITY</div>
+
+  </main>
+</body>
+</html>
